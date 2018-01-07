@@ -1,0 +1,90 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+p, a, li, blockquote {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0;
+  color: #204156;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  padding: 0 20px;
+  margin: 0;
+  color: #4682B4;
+}
+
+header a:hover {
+  color: #204156;
+}
+
+header a:active {
+  color: gray;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('../images/baybridge.jpg');
+  background-size: cover;
+  height: 75vh;
+}
+
+.jumbotron h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 63px;
+  font-weight: 600;
+  margin: 0;
+  color: #204156;
+}
+
+.jumbotron h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #4682B4;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+footer .col-sm-12 {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-element img:hover {
+  position: relative;
+  top: -5px;
+}
