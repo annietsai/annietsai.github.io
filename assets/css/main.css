@@ -53,8 +53,7 @@ header a::before {
   right: 0;
   height: 3px;
   transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
-  /*background: #2196f3;*/
-  background: #ffcdff;
+  background: #ADD8E6;
 }
 
 header a::after {
@@ -65,8 +64,6 @@ header a::after {
   right: 0;
   height: 3px;
   transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
-  /*background: #F44336;*/
-  /*background: #204156;*/
   background: #4682B4;
 }
 
