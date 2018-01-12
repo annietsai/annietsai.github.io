@@ -74,26 +74,23 @@ header a::after {
   background: #4682B4;
 }
 
-.jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url('../images/baybridge.jpg');
-  background-size: cover;
-  height: 75vh;
-}
-
-.jumbotron h2 {
+section .row h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 63px;
-  font-weight: 600;
-  margin: 0;
+  font-weight: 300;
   color: #204156;
 }
 
-.jumbotron h3 {
-  font-size: 35px;
-  font-weight: 300;
-  color: #4682B4;
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left, .align-right {
+  display: inline-block;
+  width: 50%;
 }
 
 footer {
