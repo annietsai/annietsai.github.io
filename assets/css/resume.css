@@ -74,9 +74,13 @@ header a::after {
   background: #4682B4;
 }
 
+section .row {
+  font-family: "Roboto", sans-serif;
+}
+
 section .row h2 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #204156;
 }
 
