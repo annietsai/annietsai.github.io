@@ -262,6 +262,7 @@ body {
 .music-content {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   gap: 40px;
   padding: 80px 120px;
@@ -280,6 +281,7 @@ body {
 .press-kit-content {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   gap: 40px;
   padding: 80px 120px;
