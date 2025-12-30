@@ -74,7 +74,7 @@ body {
   z-index: 2;
 }
 
-.social-links {
+.home-social-links {
   position: absolute;
   bottom: 56px;
   width: 100%;
@@ -84,7 +84,7 @@ body {
   z-index: 2;
 }
 
-.social-links a {
+.home-social-links a {
   color: white;
   text-decoration: none;
   font-size: 24px;
@@ -95,8 +95,52 @@ body {
     transform 0.3s;
 }
 
-.social-links a:hover {
+.home-social-links a:hover {
   opacity: 1;
+}
+
+.home-social-icon {
+  display: flex;
+  align-items: center;
+}
+
+.home-social-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 24px;
+  opacity: 0.4;
+  cursor: default;
+}
+
+.home-tooltip-text {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  padding: 6px 10px;
+  border-radius: 2px;
+
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.home-social-tooltip:hover .home-tooltip-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* MAIN */
@@ -154,6 +198,11 @@ body {
   justify-content: center;
 }
 
+.nav-logo-image {
+  height: 32px;
+  width: auto;
+}
+
 /* FOOTER */
 
 .main-footer {
@@ -197,6 +246,50 @@ body {
   opacity: 1;
 }
 
+.social-icon {
+  display: flex;
+  align-items: center;
+}
+
+.social-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  opacity: 0.4;
+  cursor: default;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  padding: 6px 10px;
+  border-radius: 2px;
+
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-tooltip:hover .tooltip-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* BUTTONS */
 
 .cta {
@@ -210,13 +303,12 @@ body {
   text-decoration: none;
   font-size: 20px;
   letter-spacing: 3px;
-  border-radius: 2px;
   cursor: pointer;
   text-align: center;
 }
 
 .outline {
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
 }
 

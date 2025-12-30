@@ -11,7 +11,7 @@ const Nav: React.FC = () => {
 
       <div className="nav-center">
         <Link to="/">
-          <img src={logo} alt="Enani logo" className="logo-image" />
+          <img src={logo} alt="Enani logo" className="nav-logo-image" />
         </Link>
       </div>
 

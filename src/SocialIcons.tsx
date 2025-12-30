@@ -14,6 +14,7 @@ const SocialIcons: React.FC = () => {
         href="https://instagram.com/enanimusic"
         target="_blank"
         rel="noopener noreferrer"
+        className="social-icon"
       >
         <FaInstagram />
       </a>
@@ -21,6 +22,7 @@ const SocialIcons: React.FC = () => {
         href="https://www.facebook.com/people/Enani/61584304784920"
         target="_blank"
         rel="noopener noreferrer"
+        className="social-icon"
       >
         <FaFacebook />
       </a>
@@ -28,19 +30,29 @@ const SocialIcons: React.FC = () => {
         href="https://www.tiktok.com/@enanimusic"
         target="_blank"
         rel="noopener noreferrer"
+        className="social-icon"
       >
         <FaTiktok />
       </a>
-      <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
+      <span className="social-tooltip">
+        <FaSpotify />
+        <span className="tooltip-text">Coming soon</span>
+      </span>
+      <span className="social-tooltip">
+        <SiApplemusic />
+        <span className="tooltip-text">Coming soon</span>
+      </span>
+      {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
         <FaSpotify />
       </a>
       <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
         <SiApplemusic />
-      </a>
+      </a> */}
       <a
         href="https://soundcloud.com/enanimusic"
         target="_blank"
         rel="noopener noreferrer"
+        className="social-icon"
       >
         <FaSoundcloud />
       </a>

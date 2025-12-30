@@ -50,7 +50,7 @@ const Home: React.FC = () => {
       </div>
 
       <motion.div
-        className="social-links"
+        className="home-social-links"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 0.75, y: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -59,6 +59,7 @@ const Home: React.FC = () => {
           href="https://instagram.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
+          className="home-social-icon"
         >
           <FaInstagram />
         </a>
@@ -66,6 +67,7 @@ const Home: React.FC = () => {
           href="https://www.facebook.com/people/Enani/61584304784920"
           target="_blank"
           rel="noopener noreferrer"
+          className="home-social-icon"
         >
           <FaFacebook />
         </a>
@@ -73,19 +75,29 @@ const Home: React.FC = () => {
           href="https://www.tiktok.com/@enanimusic"
           target="_blank"
           rel="noopener noreferrer"
+          className="home-social-icon"
         >
           <FaTiktok />
         </a>
-        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
+        <span className="home-social-tooltip">
+          <FaSpotify />
+          <span className="home-tooltip-text">Coming soon</span>
+        </span>
+        <span className="home-social-tooltip">
+          <SiApplemusic />
+          <span className="home-tooltip-text">Coming soon</span>
+        </span>
+        {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
           <FaSpotify />
         </a>
         <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
           <SiApplemusic />
-        </a>
+        </a> */}
         <a
           href="https://soundcloud.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
+          className="home-social-icon"
         >
           <FaSoundcloud />
         </a>

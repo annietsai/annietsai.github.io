@@ -31,13 +31,13 @@ const About: React.FC = () => {
               emotional storytelling.
               <br />
               <br />
-              Since then, Enani has amassed over 40,000 streams on SoundCloud,
-              and in 2024 she was awarded the SLANDER x ICON Collective
-              scholarship. Though the program closed shortly after her start in
-              April 2025, she has continued to steadily refine a sound that
-              lives between cinematic bass, melodic electronic, and high-energy
-              club influences. Her work is defined by immersive atmospheres,
-              powerful builds, and a strong emotional core.
+              Since then, Enani has amassed over 60,000 streams on SoundCloud
+              and in 2024 was awarded the SLANDER x ICON Collective scholarship.
+              Although the program closed shortly after her start in April 2025,
+              she has continued to steadily refine a sound that lives between
+              cinematic bass, melodic electronic, and high-energy club
+              influences. Her work is defined by immersive atmospheres, powerful
+              builds, and a strong emotional core.
               <br />
               <br />
               Enani brings this world to life through dynamic performances that
