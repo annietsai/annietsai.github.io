@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Annie Tsai</title>
-    <meta name="description" content="Annie Tsai | Computer Science Student at UC Berkeley">
-    <meta name="keywords" content="annie, tsai, berkeley, uc, tsaiannie1, annietsai, tsaiannie">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artist Landing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,600,700' rel='stylesheet' type='text/css'>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" charset="utf-8">
+  <!-- NAV -->
+  <!-- <header class="nav">
+    <div class="logo">Enani</div>
+    <nav>
+      <a href="#">Enani</a>
+    </nav>
+  </header> -->
 
-    <!-- JavaScript -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
+  <!-- SECTION -->
+  <!-- <section class="info">
+    <h2>Latest Release</h2>
+    <p>
+      A cinematic journey through melody, memory, and movement.
+    </p>
+  </section> -->
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  </head>
+  <!-- FOOTER -->
+  <!-- <footer>
+    <p>© 2025 Enani</p>
+  </footer> -->
 
-  <body>
-    <!-- Navigation Bar -->
-    <header class="container">
-      <nav class="row text-center">
-        <a class="topbar-element" href="index.html">HOME</a>
-        <!-- <a class="topbar-element" href="projects.html">PROJECTS</a> -->
-        <!-- <a class="topbar-element" href="assets/resume.pdf">RÉSUMÉ</a> -->
-        <a class="topbar-element" href="resume.html">RÉSUMÉ</a>
-      </nav>
-    </header>
-
-    <!-- Content -->
-    <section class="jumbotron">
-      <div class="container">
-        <div class="row text-center">
-          <h2>ANNIE TSAI</h2>
-          <h3>
-            <div class="typewrite" data-period="2000" data-type='[ "Software Developer", "UC Berkeley Undergraduate", "Half-Marathon Runner", "Classical Pianist", "Avid Skier", "Dog Lover", "Showerhead Singer", "Amateur Photographer" ]'>
-              <span class="wrap"></span>
-            </div>
-          </h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="container">
-      <div class="row text-center">
-        <ul class="col-sm-12">
-          <li class="col-sm-1">
-            <a class="footer-element" href="mailto:annietsai@berkeley.edu"><img src="assets/images/email.png" id="email" alt="Email"></a>
-          </li>
-          <li class="col-sm-1">
-            <a class="footer-element" href="https://www.linkedin.com/in/tsaiannie1"><img src="assets/images/linkedin.png" id="linkedin" alt="LinkedIn"></a>
-          </li>
-          <li class="col-sm-1">
-            <a class="footer-element" href="https://github.com/annietsai"><img src="assets/images/github.png" id="github" alt="GitHub"></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
-</html>   
+  <script>
+    (function () {
+      const redirect = sessionStorage.redirect;
+      if (redirect) {
+        sessionStorage.removeItem("redirect");
+        history.replaceState(null, "", redirect);
+      }
+    })();
+  </script>
+</body>
+</html>
