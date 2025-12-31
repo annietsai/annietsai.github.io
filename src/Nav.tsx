@@ -6,7 +6,7 @@ const Nav: React.FC = () => {
     <nav className="main-nav">
       <div className="nav-left">
         <Link to="/">HOME</Link>
-        <Link to="/about">ABOUT</Link>
+        <Link to="/music">MUSIC</Link>
       </div>
 
       <div className="nav-center">
@@ -16,8 +16,8 @@ const Nav: React.FC = () => {
       </div>
 
       <div className="nav-right">
-        <Link to="/music">MUSIC</Link>
-        <Link to="/press-kit">PRESS KIT</Link>
+        <Link to="/about">ABOUT</Link>
+        <Link to="/epk">EPK</Link>
       </div>
     </nav>
   );

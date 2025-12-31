@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Home.tsx';
 import About from './About.tsx';
 import Music from './Music.tsx';
-import PressKit from './PressKit.tsx';
+import EPK from './EPK.tsx';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: React.FC = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/music" element={<Music />} />
-      <Route path="/press-kit" element={<PressKit />} />
+      <Route path="/epk" element={<EPK />} />
     </Routes>
   );
 };

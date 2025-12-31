@@ -368,13 +368,24 @@ body {
   object-position: 50% 50%;
 }
 
-/* PRESS KIT */
+/* EPK */
 
-.press-kit-content {
+.epk-content {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
   gap: 40px;
   padding: 80px 120px;
+  text-align: center;
+}
+
+.epk-pdf-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.epk-pdf {
+  height: 57vw;
+  width: 40vw;
 }

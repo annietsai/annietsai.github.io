@@ -28,13 +28,6 @@ const Home: React.FC = () => {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
-          >
-            <Link to="/about">ABOUT</Link>
-          </motion.span>
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
           >
             <Link to="/music">MUSIC</Link>
@@ -42,9 +35,16 @@ const Home: React.FC = () => {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
+          >
+            <Link to="/about">ABOUT</Link>
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.6 }}
           >
-            <Link to="/press-kit">PRESS KIT</Link>
+            <Link to="/epk">EPK</Link>
           </motion.span>
         </div>
       </div>

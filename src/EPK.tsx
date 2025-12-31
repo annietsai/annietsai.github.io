@@ -1,21 +1,27 @@
 import Nav from './Nav';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
+import epk from '../public/enani-epk.pdf';
 
-const PressKit: React.FC = () => {
+const EPK: React.FC = () => {
   return (
     <div className="main-page">
       <Nav />
 
-      <main className="press-kit-content">
+      <main className="epk-content">
         <h1>ELECTRONIC PRESS KIT</h1>
         <motion.div
-          className="cta"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
+          className="epk-pdf-wrapper"
         >
-          COMING SOON
+          <object data={epk} type="application/pdf" className="epk-pdf">
+            <p>
+              Your browser does not support PDF embeds. You can
+              <a href={epk}>download the PDF document</a> instead.
+            </p>
+          </object>
         </motion.div>
       </main>
 
@@ -24,4 +30,4 @@ const PressKit: React.FC = () => {
   );
 };
 
-export default PressKit;
+export default EPK;
