@@ -5,7 +5,7 @@ import {
   FaSpotify,
   FaSoundcloud,
 } from 'react-icons/fa';
-import { SiApplemusic } from 'react-icons/si';
+import { SiApplemusic, SiLinktree } from 'react-icons/si';
 
 const SocialIcons: React.FC = () => {
   return (
@@ -55,6 +55,14 @@ const SocialIcons: React.FC = () => {
         className="social-icon"
       >
         <FaSoundcloud />
+      </a>
+      <a
+        href="https://linktr.ee/enanimusic"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon"
+      >
+        <SiLinktree />
       </a>
     </div>
   );

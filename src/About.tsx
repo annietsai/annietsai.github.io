@@ -25,7 +25,7 @@ const About: React.FC = () => {
           <div className="about-bio">
             <p>
               <strong>Enani</strong> is a music producer, DJ, singer, and
-              songwriter. Classically trained on piano and viola and later
+              songwriter. Classically trained in piano and viola and later
               self-taught on guitar, Enani began producing electronic music in
               2020, blending cinematic sound design with euphoric melodies and
               emotional storytelling.

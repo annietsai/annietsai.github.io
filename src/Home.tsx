@@ -6,7 +6,7 @@ import {
   FaSoundcloud,
   FaTiktok,
 } from 'react-icons/fa';
-import { SiApplemusic } from 'react-icons/si';
+import { SiApplemusic, SiLinktree } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import logo from './assets/enani-logo-white.png';
 import background from './assets/in-the-end-cover-art.jpeg';
@@ -28,14 +28,14 @@ const Home: React.FC = () => {
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+            transition={{ duration: 1.2, ease: 'easeOut' }}
           >
             <Link to="/music">MUSIC</Link>
           </motion.span>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.2, ease: 'easeOut' }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
           >
             <Link to="/about">ABOUT</Link>
           </motion.span>
@@ -100,6 +100,14 @@ const Home: React.FC = () => {
           className="home-social-icon"
         >
           <FaSoundcloud />
+        </a>
+        <a
+          href="https://linktr.ee/enanimusic"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="home-social-icon"
+        >
+          <SiLinktree />
         </a>
       </motion.div>
     </section>
