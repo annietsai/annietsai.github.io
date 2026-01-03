@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // Redirect all routes to index.html for SPA routing
+      sessionStorage.redirect = location.pathname;
+      window.location.replace("/");
+    </script>
+  </head>
+  <body></body>
+</html>
