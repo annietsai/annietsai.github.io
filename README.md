@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Setup
 
 ## To test locally
 ```
@@ -12,6 +12,8 @@ git checkout master
 git pull origin master
 npm run deploy
 ```
+
+# React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
