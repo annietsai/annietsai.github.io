@@ -5,24 +5,35 @@ import Nav from './Nav';
 
 const About: React.FC = () => {
   return (
-    <div className="main-page">
+    <div className="min-h-screen flex flex-col bg-[#070709] text-white">
       <Nav />
 
-      <main className="about-content">
-        <div className="about-image">
+      <main
+        className="flex-1
+          grid grid-cols-1 md:grid-cols-2
+          items-center
+          gap-8 md:gap-12 xl:gap-20
+          px-8 sm:px-12 md:px-16 xl:px-32
+          py-10 sm:py-12 xl:py-20"
+      >
+        <div>
           <motion.div
-            className="cta"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
+            className="flex justify-center"
           >
-            <img src={aboutPhoto} alt="Enani portrait" />
+            <img
+              src={aboutPhoto}
+              alt="Enani portrait"
+              className="w-full h-auto rounded-sm object-cover"
+            />
           </motion.div>
         </div>
 
-        <div className="about-right">
-          <h1>ABOUT ENANI</h1>
-          <div className="about-bio">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-xl tracking-[0.3em] font-medium">ABOUT ENANI</h1>
+          <div className="flex flex-col gap-4 text-base leading-relaxed opacity-85 max-w-[600px]">
             <p>
               <strong>Enani</strong> is a music producer, DJ, singer, and
               songwriter. Classically trained in piano and viola and later
