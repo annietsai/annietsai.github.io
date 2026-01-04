@@ -211,6 +211,7 @@ body {
   align-items: center;
   padding: 40px 56px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 8px;
 }
 
 .footer-left {
@@ -307,6 +308,20 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .btn {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 16px 24px;
+    font-size: 12px;
+  }
+}
+
 .outline {
   border: 2px solid white;
   color: white;
@@ -329,6 +344,27 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .about-content {
+    gap: 32px;
+    padding: 40px 32px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column; /* stack photo on top of bio */
+    padding: 40px 64px 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-content {
+    padding: 24px 32px 48px;
+  }
+}
+
 .about-image img {
   width: 100%;
   height: auto;
@@ -339,10 +375,13 @@ body {
 .about-right {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 16px;
 }
 
 .about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   font-size: 16px;
   line-height: 1.8;
   opacity: 0.85;
@@ -358,6 +397,18 @@ body {
   align-items: center;
   gap: 40px;
   padding: 80px 120px;
+}
+
+@media (max-width: 768px) {
+  .music-content {
+    padding: 40px 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .music-content {
+    padding: 24px 32px;
+  }
 }
 
 .music-cover-art {
@@ -378,6 +429,18 @@ body {
   gap: 40px;
   padding: 80px 120px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .epk-content {
+    padding: 40px 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .epk-content {
+    padding: 24px 32px;
+  }
 }
 
 .epk-pdf-wrapper {

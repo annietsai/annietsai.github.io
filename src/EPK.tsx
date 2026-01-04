@@ -1,7 +1,7 @@
 import Nav from './Nav';
 import Footer from './Footer';
 import { motion } from 'framer-motion';
-import epk from '../public/enani-epk.pdf';
+import epk from './assets/enani-epk.pdf';
 
 const EPK: React.FC = () => {
   return (

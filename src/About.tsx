@@ -29,8 +29,8 @@ const About: React.FC = () => {
               self-taught on guitar, Enani began producing electronic music in
               2020, blending cinematic sound design with euphoric melodies and
               emotional storytelling.
-              <br />
-              <br />
+            </p>
+            <p>
               Since then, Enani has amassed over 60,000 streams on SoundCloud
               and in 2024 was awarded the SLANDER x ICON Collective scholarship.
               Although the program closed shortly after her start in April 2025,
@@ -38,8 +38,8 @@ const About: React.FC = () => {
               cinematic bass, melodic electronic, and high-energy club
               influences. Her work is defined by immersive atmospheres, powerful
               builds, and a strong emotional core.
-              <br />
-              <br />
+            </p>
+            <p>
               Enani brings this world to life through dynamic performances that
               weave original productions with remixes and high-impact electronic
               selections, creating a genre-fluid experience that balances
