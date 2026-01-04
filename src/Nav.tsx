@@ -1,7 +1,30 @@
 import { Link } from 'react-router-dom';
+import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
 import logo from './assets/enani-logo-white.png';
+import { useMobileMenuStore } from './stores/mobileMenuStore';
 
-const Nav: React.FC = () => {
+const NavMobile: React.FC = () => {
+  const { isMobileMenuOpen, toggleMobileMenu } = useMobileMenuStore();
+
+  return (
+    <nav className="sticky top-0 z-50 bg-[#070709]">
+      <div className="flex items-center justify-between px-6 py-4">
+        <button
+          className="text-white text-2xl md:hidden cursor-pointer"
+          onClick={toggleMobileMenu}
+        >
+          {isMobileMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+        </button>
+
+        <Link to="/" className="mx-auto md:mx-0">
+          <img src={logo} alt="Enani logo" className="h-8 w-auto" />
+        </Link>
+      </div>
+    </nav>
+  );
+};
+
+const NavDesktop: React.FC = () => {
   return (
     <nav className="sticky top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-center px-14 py-6 bg-[#070709]">
       <div className="flex justify-end items-center gap-8">
@@ -38,6 +61,19 @@ const Nav: React.FC = () => {
         </Link>
       </div>
     </nav>
+  );
+};
+
+const Nav: React.FC = () => {
+  return (
+    <>
+      <div className="md:hidden">
+        <NavMobile />
+      </div>
+      <div className="hidden md:block">
+        <NavDesktop />
+      </div>
+    </>
   );
 };
 

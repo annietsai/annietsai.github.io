@@ -1,13 +1,10 @@
-import Nav from './Nav';
-import Footer from './Footer';
 import { motion } from 'framer-motion';
 import epk from './assets/enani-epk.pdf';
+import PageWrapper from './PageWrapper';
 
 const EPK: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#070709] text-white">
-      <Nav />
-
+    <PageWrapper>
       <main
         className="
           flex flex-col flex-1 items-center text-center
@@ -55,9 +52,7 @@ const EPK: React.FC = () => {
           </a>
         </motion.div>
       </main>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

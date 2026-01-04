@@ -1,13 +1,10 @@
 import { motion } from 'framer-motion';
 import aboutPhoto from './assets/about-photo.jpg';
-import Footer from './Footer';
-import Nav from './Nav';
+import PageWrapper from './PageWrapper';
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#070709] text-white">
-      <Nav />
-
+    <PageWrapper>
       <main
         className="flex-1
           grid grid-cols-1 md:grid-cols-2
@@ -59,9 +56,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </main>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

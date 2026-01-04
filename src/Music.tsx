@@ -1,7 +1,6 @@
-import Nav from './Nav';
-import Footer from './Footer';
 import inTheEndCoverArtPhoto from './assets/in-the-end-cover-art.jpeg';
 import { motion } from 'framer-motion';
+import PageWrapper from './PageWrapper';
 
 const CTA_LINK = 'https://too.fm/evodzrd';
 const CTA_TEXT = 'PRE-SAVE “IN THE END”';
@@ -9,9 +8,7 @@ const IMAGE_ALT = 'In The End cover art';
 
 const Music: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-[#070709] text-white">
-      <Nav />
-
+    <PageWrapper>
       <main
         className="flex flex-col flex-1 items-center
           gap-10
@@ -56,9 +53,7 @@ const Music: React.FC = () => {
           </a>
         </motion.div>
       </main>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 
