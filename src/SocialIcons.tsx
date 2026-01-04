@@ -9,12 +9,12 @@ import { SiApplemusic, SiLinktree } from 'react-icons/si';
 
 const SocialIcons: React.FC = () => {
   return (
-    <div className="social-icons">
+    <div className="flex justify-center sm:justify-end gap-5">
       <a
         href="https://instagram.com/enanimusic"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <FaInstagram />
       </a>
@@ -22,7 +22,7 @@ const SocialIcons: React.FC = () => {
         href="https://www.facebook.com/people/Enani/61584304784920"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <FaFacebook />
       </a>
@@ -30,17 +30,43 @@ const SocialIcons: React.FC = () => {
         href="https://www.tiktok.com/@enanimusic"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <FaTiktok />
       </a>
-      <span className="social-tooltip">
+      <span className="relative flex items-center opacity-40 cursor-default group">
         <FaSpotify />
-        <span className="tooltip-text">Coming soon</span>
+        <span
+          className="
+            absolute bottom-[140%] left-1/2
+            -translate-x-1/2 translate-y-1
+            bg-black/80 text-white
+            text-[10px] tracking-[1px] uppercase
+            px-2.5 py-1.5 rounded
+            whitespace-nowrap
+            opacity-0 pointer-events-none
+            transition-all duration-300
+            group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          Coming soon
+        </span>
       </span>
-      <span className="social-tooltip">
+      <span className="relative flex items-center opacity-40 cursor-default group">
         <SiApplemusic />
-        <span className="tooltip-text">Coming soon</span>
+        <span
+          className="
+            absolute bottom-[140%] left-1/2
+            -translate-x-1/2 translate-y-1
+            bg-black/80 text-white
+            text-[10px] tracking-[1px] uppercase
+            px-2.5 py-1.5 rounded
+            whitespace-nowrap
+            opacity-0 pointer-events-none
+            transition-all duration-300
+            group-hover:opacity-100 group-hover:translate-y-0"
+        >
+          Coming soon
+        </span>
       </span>
       {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
         <FaSpotify />
@@ -52,7 +78,7 @@ const SocialIcons: React.FC = () => {
         href="https://soundcloud.com/enanimusic"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <FaSoundcloud />
       </a>
@@ -60,7 +86,7 @@ const SocialIcons: React.FC = () => {
         href="https://linktr.ee/enanimusic"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <SiLinktree />
       </a>

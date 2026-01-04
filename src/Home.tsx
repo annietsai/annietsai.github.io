@@ -13,53 +13,74 @@ import background from './assets/in-the-end-cover-art.jpeg';
 
 const Home: React.FC = () => {
   return (
-    <section className="home">
-      <div className="overlay" />
+    <section className="relative h-screen flex items-center justify-center">
+      <img
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src={background}
+      />
 
-      <img className="background" src={background} />
-      <div className="overlay" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.1),rgba(0,0,0,0.4))] z-10" />
 
-      <nav className="nav">
-        <img src={logo} alt="Enani logo" className="logo-image" />
+      <nav className="absolute top-0 w-full flex justify-center py-14 z-20">
+        <img src={logo} alt="Enani logo" className="h-10 w-auto" />
       </nav>
 
-      <div className="home-content">
-        <div className="links">
+      <div className="relative z-20 text-center">
+        <div className="flex gap-7 text-[13px] tracking-[3px]">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
           >
-            <Link to="/music">MUSIC</Link>
+            <Link
+              to="/music"
+              className="opacity-100 hover:opacity-75 transition-opacity"
+            >
+              MUSIC
+            </Link>
           </motion.span>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
           >
-            <Link to="/about">ABOUT</Link>
+            <Link
+              to="/about"
+              className="opacity-100 hover:opacity-75 transition-opacity"
+            >
+              ABOUT
+            </Link>
           </motion.span>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, ease: 'easeOut', delay: 0.6 }}
           >
-            <Link to="/epk">EPK</Link>
+            <Link
+              to="/epk"
+              className="opacity-100 hover:opacity-75 transition-opacity"
+            >
+              EPK
+            </Link>
           </motion.span>
         </div>
       </div>
 
       <motion.div
-        className="home-social-links"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 0.75, y: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
+        className="
+          absolute bottom-14 w-full
+          flex justify-center gap-6
+          text-2xl
+          z-20"
       >
         <a
           href="https://instagram.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="home-social-icon"
+          className="hover:opacity-100 transition-opacity"
         >
           <FaInstagram />
         </a>
@@ -67,7 +88,7 @@ const Home: React.FC = () => {
           href="https://www.facebook.com/people/Enani/61584304784920"
           target="_blank"
           rel="noopener noreferrer"
-          className="home-social-icon"
+          className="hover:opacity-100 transition-opacity"
         >
           <FaFacebook />
         </a>
@@ -75,17 +96,43 @@ const Home: React.FC = () => {
           href="https://www.tiktok.com/@enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="home-social-icon"
+          className="hover:opacity-100 transition-opacity"
         >
           <FaTiktok />
         </a>
-        <span className="home-social-tooltip">
+        <span className="relative flex items-center opacity-40 cursor-default group">
           <FaSpotify />
-          <span className="home-tooltip-text">Coming soon</span>
+          <span
+            className="
+              absolute bottom-[140%] left-1/2
+              -translate-x-1/2 translate-y-1
+              bg-black/80 text-white
+              text-[10px] tracking-[1px] uppercase
+              px-2.5 py-1.5 rounded
+              whitespace-nowrap
+              opacity-0 pointer-events-none
+              transition-all duration-300
+              group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            Coming soon
+          </span>
         </span>
-        <span className="home-social-tooltip">
+        <span className="relative flex items-center opacity-40 cursor-default group">
           <SiApplemusic />
-          <span className="home-tooltip-text">Coming soon</span>
+          <span
+            className="
+              absolute bottom-[140%] left-1/2
+              -translate-x-1/2 translate-y-1
+              bg-black/80 text-white
+              text-[10px] tracking-[1px] uppercase
+              px-2.5 py-1.5 rounded
+              whitespace-nowrap
+              opacity-0 pointer-events-none
+              transition-all duration-300
+              group-hover:opacity-100 group-hover:translate-y-0"
+          >
+            Coming soon
+          </span>
         </span>
         {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
           <FaSpotify />
@@ -97,7 +144,7 @@ const Home: React.FC = () => {
           href="https://soundcloud.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="home-social-icon"
+          className="hover:opacity-100 transition-opacity"
         >
           <FaSoundcloud />
         </a>
@@ -105,7 +152,7 @@ const Home: React.FC = () => {
           href="https://linktr.ee/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="home-social-icon"
+          className="hover:opacity-100 transition-opacity"
         >
           <SiLinktree />
         </a>
