@@ -8,28 +8,26 @@ const NavMobile: React.FC = () => {
     useMobileMenuStore();
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#070709]">
-      <div className="flex items-center justify-between px-6 py-4">
-        <button
-          className="text-white text-2xl md:hidden cursor-pointer"
-          onClick={toggleMobileMenu}
-        >
-          {isMobileMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
-        </button>
-        <Link to="/" className="mx-auto md:mx-0" onClick={closeMobileMenu}>
-          <img src={logo} alt="Enani logo" className="h-8 w-auto" />
-        </Link>
-        <div className="invisible text-2xl md:hidden">
-          <RxCross1 />
-        </div>
+    <div className="flex items-center justify-between px-6 py-4">
+      <button
+        className="text-white text-2xl md:hidden cursor-pointer"
+        onClick={toggleMobileMenu}
+      >
+        {isMobileMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
+      </button>
+      <Link to="/" className="mx-auto md:mx-0" onClick={closeMobileMenu}>
+        <img src={logo} alt="Enani logo" className="h-8 w-auto" />
+      </Link>
+      <div className="invisible text-2xl md:hidden">
+        <RxCross1 />
       </div>
-    </nav>
+    </div>
   );
 };
 
 const NavDesktop: React.FC = () => {
   return (
-    <nav className="sticky top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-center px-14 py-6 bg-[#070709]">
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center px-14 py-6">
       <div className="flex justify-end items-center gap-8">
         <Link
           to="/"
@@ -63,20 +61,20 @@ const NavDesktop: React.FC = () => {
           EPK
         </Link>
       </div>
-    </nav>
+    </div>
   );
 };
 
 const Nav: React.FC = () => {
   return (
-    <>
+    <nav className="sticky top-0 z-50 bg-[#070709]">
       <div className="md:hidden">
         <NavMobile />
       </div>
       <div className="hidden md:block">
         <NavDesktop />
       </div>
-    </>
+    </nav>
   );
 };
 
