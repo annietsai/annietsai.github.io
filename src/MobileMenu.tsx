@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useMobileMenuStore } from './stores/mobileMenuStore';
+import { useEffect } from 'react';
 
 const NAV_LINKS = [
   { name: 'HOME', href: '/' },
@@ -13,6 +14,18 @@ const MobileMenu: React.FC = () => {
   const navigate = useNavigate();
   const { isMobileMenuOpen, closeMobileMenu } = useMobileMenuStore();
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
   const handleNavClick = async (href: string) => {
     await navigate(href);
     closeMobileMenu();
@@ -21,13 +34,21 @@ const MobileMenu: React.FC = () => {
   const menuVariants = {
     hidden: { opacity: 0, y: -20, transition: { duration: 0.3 } },
     visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
   };
 
   return (
     <AnimatePresence>
       {isMobileMenuOpen && (
         <motion.div
-          className="flex flex-col items-center justify-center grow pb-16"
+          className="
+            min-h-[100dvh]
+            bg-[#070709]
+            flex flex-col
+            items-center justify-center
+            overflow-hidden
+            pb-16
+            touch-none overscroll-none"
           initial="hidden"
           animate="visible"
           exit="exit"
