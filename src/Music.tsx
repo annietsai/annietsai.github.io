@@ -1,4 +1,4 @@
-import inTheEndCoverArtPhoto from './assets/in-the-end-cover-art.jpeg';
+import inTheEndCoverArtPhoto from './assets/in-the-end-cover-art.png';
 import { motion } from 'framer-motion';
 import PageWrapper from './PageWrapper';
 
@@ -28,7 +28,7 @@ const Music: React.FC = () => {
             rel="noopener noreferrer"
             className="
               border-2 border-white
-              text-xl tracking-[3px]
+              text-md sm:text-xl tracking-[3px]
               transition-all duration-500 ease-out
               hover:bg-white hover:text-black
               px-8 py-4 text-base

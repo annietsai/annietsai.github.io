@@ -4,7 +4,8 @@ import logo from './assets/enani-logo-white.png';
 import { useMobileMenuStore } from './stores/mobileMenuStore';
 
 const NavMobile: React.FC = () => {
-  const { isMobileMenuOpen, toggleMobileMenu } = useMobileMenuStore();
+  const { isMobileMenuOpen, toggleMobileMenu, closeMobileMenu } =
+    useMobileMenuStore();
 
   return (
     <nav className="sticky top-0 z-50 bg-[#070709]">
@@ -15,10 +16,12 @@ const NavMobile: React.FC = () => {
         >
           {isMobileMenuOpen ? <RxCross1 /> : <RxHamburgerMenu />}
         </button>
-
-        <Link to="/" className="mx-auto md:mx-0">
+        <Link to="/" className="mx-auto md:mx-0" onClick={closeMobileMenu}>
           <img src={logo} alt="Enani logo" className="h-8 w-auto" />
         </Link>
+        <div className="invisible text-2xl md:hidden">
+          <RxCross1 />
+        </div>
       </div>
     </nav>
   );
