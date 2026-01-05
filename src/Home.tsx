@@ -9,11 +9,16 @@ import {
 import { SiApplemusic, SiLinktree } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 import logo from './assets/enani-logo-white.png';
-import background from './assets/in-the-end-cover-art.jpeg';
+import background from './assets/in-the-end-cover-art-no-title.jpeg';
 
 const Home: React.FC = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center">
+    <section
+      className="
+      relative min-h-[100dvh]
+      flex items-center justify-center
+      overflow-hidden"
+    >
       <img
         className="absolute inset-0 w-full h-full object-cover z-0"
         src={background}
@@ -74,7 +79,8 @@ const Home: React.FC = () => {
           absolute bottom-14 w-full
           flex justify-center gap-6
           text-2xl
-          z-20"
+          z-20
+          pb-[env(safe-area-inset-bottom)]"
       >
         <a
           href="https://instagram.com/enanimusic"

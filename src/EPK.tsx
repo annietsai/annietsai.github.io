@@ -12,9 +12,7 @@ const EPK: React.FC = () => {
           px-8 sm:px-12 md:px-16 xl:px-32
           py-20 md:py-10"
       >
-        <h1 className="text-4xl tracking-[0.2em] font-medium">
-          ELECTRONIC PRESS KIT
-        </h1>
+        <h1 className="text-4xl tracking-[0.2em] font-medium">PRESS KIT</h1>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +40,7 @@ const EPK: React.FC = () => {
             href={epk}
             className="
               md:hidden border-2 border-white
-              text-xl tracking-[3px]
+              text-md sm:text-xl tracking-[3px]
               transition-all duration-500 ease-out
               hover:bg-white hover:text-black
               px-8 py-4 text-base
