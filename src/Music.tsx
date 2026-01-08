@@ -28,7 +28,7 @@ const Music: React.FC = () => {
             rel="noopener noreferrer"
             className="
               border-2 border-white
-              text-md sm:text-xl tracking-[3px]
+              text-md sm:text-xl tracking-[3px] text-center
               transition-all duration-500 ease-out
               hover:bg-white hover:text-black
               px-8 py-4 text-base

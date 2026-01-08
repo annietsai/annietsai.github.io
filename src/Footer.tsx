@@ -15,7 +15,9 @@ const Footer: React.FC = () => {
         <div className="flex justify-center sm:justify-start">
           <img src={logo} alt="Enani logo" className="h-6 w-auto" />
         </div>
-        <span>© {new Date().getFullYear()} Enani. All rights reserved.</span>
+        <span className="text-center">
+          © {new Date().getFullYear()} Enani. All rights reserved.
+        </span>
       </div>
 
       <SocialIcons />
