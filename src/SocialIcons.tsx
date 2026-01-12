@@ -34,23 +34,13 @@ const SocialIcons: React.FC = () => {
       >
         <FaTiktok />
       </a>
-      <span className="relative flex items-center opacity-40 cursor-default group">
+      <a
+        href="https://open.spotify.com/artist/740DEDhoQPOsYALbCezzAQ"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FaSpotify />
-        <span
-          className="
-            absolute bottom-[140%] left-1/2
-            -translate-x-1/2 translate-y-1
-            bg-black/80 text-white
-            text-[10px] tracking-[1px] uppercase
-            px-2.5 py-1.5 rounded
-            whitespace-nowrap
-            opacity-0 pointer-events-none
-            transition-all duration-300
-            group-hover:opacity-100 group-hover:translate-y-0"
-        >
-          Coming soon
-        </span>
-      </span>
+      </a>
       <span className="relative flex items-center opacity-40 cursor-default group">
         <SiApplemusic />
         <span
@@ -68,10 +58,7 @@ const SocialIcons: React.FC = () => {
           Coming soon
         </span>
       </span>
-      {/* <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
-        <FaSpotify />
-      </a>
-      <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
         <SiApplemusic />
       </a> */}
       <a
