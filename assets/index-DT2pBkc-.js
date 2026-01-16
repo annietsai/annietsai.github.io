@@ -73,7 +73,7 @@ Please change the parent <Route path="${H}"> to <Route path="${H==="/"?"*":`${H}
               px-8 py-4 text-base
               lg:px-13 lg:py-6`,children:H5})}),j.jsx(Ie.div,{initial:{opacity:0,y:40},animate:{opacity:1,y:0},transition:{duration:1.2,ease:"easeOut",delay:.8},children:j.jsx("a",{href:y0,target:"_blank",rel:"noopener noreferrer",children:j.jsx("img",{src:L5,alt:Y5,className:`
                 w-full h-full max-w-[720px]
-                object-cover object-center`})})})]})}),Tc="/assets/enani-epk-Dc1nss6N.pdf",G5=()=>j.jsx(Vf,{children:j.jsxs("main",{className:`
+                object-cover object-center`})})})]})}),Tc="/assets/enani-epk-BacppH8E.pdf",G5=()=>j.jsx(Vf,{children:j.jsxs("main",{className:`
           flex flex-col flex-1 items-center text-center
           gap-10
           px-8 sm:px-12 md:px-16 xl:px-32
