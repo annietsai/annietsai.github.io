@@ -39,25 +39,23 @@ const About: React.FC = () => {
             <div className="flex flex-col gap-4 text-base leading-relaxed opacity-85 max-w-[600px]">
               <p>
                 <strong>Enani</strong> is a music producer, DJ, singer, and
-                songwriter. Classically trained in piano and viola and later
-                self-taught on guitar, Enani began producing electronic music in
-                2020, blending cinematic sound design with euphoric melodies and
+                songwriter originally from Southern California’s Inland Empire.
+                Trained in piano and viola at a young age and later self-taught
+                on guitar, Enani began producing electronic music in 2020,
+                blending cinematic sound design with euphoric melodies and
                 emotional storytelling.
               </p>
               <p>
                 Since then, Enani has amassed over 60,000 streams on SoundCloud
                 and in 2024 was awarded the SLANDER x ICON Collective
-                scholarship. Although the program closed shortly after her start
-                in April 2025, she has continued to steadily refine a sound that
-                lives between cinematic bass, melodic electronic, and
-                high-energy club influences. Her work is defined by immersive
-                atmospheres, powerful builds, and a strong emotional core.
+                scholarship. Her work is defined by immersive atmospheres,
+                powerful builds, and a strong emotional core.
               </p>
               <p>
                 Enani brings this world to life through dynamic performances
-                that weave original productions with remixes and high-impact
-                electronic selections, creating a genre-fluid experience that
-                balances introspection with intensity.
+                that weave original productions with remixes and high-energy
+                club records, creating a genre-fluid experience that balances
+                introspection with intensity.
               </p>
             </div>
           </motion.div>
