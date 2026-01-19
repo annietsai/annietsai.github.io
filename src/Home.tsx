@@ -86,7 +86,7 @@ const Home: React.FC = () => {
           href="https://instagram.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <FaInstagram />
         </a>
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
           href="https://www.facebook.com/people/Enani/61584304784920"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <FaFacebook />
         </a>
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
           href="https://www.tiktok.com/@enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <FaTiktok />
         </a>
@@ -110,6 +110,7 @@ const Home: React.FC = () => {
           href="https://open.spotify.com/artist/740DEDhoQPOsYALbCezzAQ"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <FaSpotify />
         </a>
@@ -130,14 +131,14 @@ const Home: React.FC = () => {
             Coming soon
           </span>
         </span>
-        {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 opacity-80 transition-opacity">
           <SiApplemusic />
         </a> */}
         <a
           href="https://soundcloud.com/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <FaSoundcloud />
         </a>
@@ -145,7 +146,7 @@ const Home: React.FC = () => {
           href="https://linktr.ee/enanimusic"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:opacity-100 transition-opacity"
+          className="hover:opacity-100 opacity-80 transition-opacity"
         >
           <SiLinktree />
         </a>
