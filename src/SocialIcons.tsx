@@ -38,6 +38,7 @@ const SocialIcons: React.FC = () => {
         href="https://open.spotify.com/artist/740DEDhoQPOsYALbCezzAQ"
         target="_blank"
         rel="noopener noreferrer"
+        className="hover:opacity-100 opacity-70 transition-opacity"
       >
         <FaSpotify />
       </a>
@@ -58,7 +59,7 @@ const SocialIcons: React.FC = () => {
           Coming soon
         </span>
       </span>
-      {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 opacity-70 transition-opacity">
         <SiApplemusic />
       </a> */}
       <a
