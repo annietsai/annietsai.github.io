@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import PageWrapper from './PageWrapper';
 
 const CTA_LINK = 'https://too.fm/evodzrd';
-const CTA_TEXT = 'PRE-SAVE “IN THE END”';
+const CTA_TEXT = '“IN THE END” OUT NOW';
 const IMAGE_ALT = 'In The End cover art';
 
 const Music: React.FC = () => {

@@ -114,26 +114,14 @@ const Home: React.FC = () => {
         >
           <FaSpotify />
         </a>
-        <span className="relative flex items-center opacity-40 cursor-default group">
+        <a
+          href="https://music.apple.com/us/artist/enani/1546040901"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:opacity-100 opacity-80 transition-opacity"
+        >
           <SiApplemusic />
-          <span
-            className="
-              absolute bottom-[140%] left-1/2
-              -translate-x-1/2 translate-y-1
-              bg-black/80 text-white
-              text-[10px] tracking-[1px] uppercase
-              px-2.5 py-1.5 rounded
-              whitespace-nowrap
-              opacity-0 pointer-events-none
-              transition-all duration-300
-              group-hover:opacity-100 group-hover:translate-y-0"
-          >
-            Coming soon
-          </span>
-        </span>
-        {/* <a href="https://apple.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 opacity-80 transition-opacity">
-          <SiApplemusic />
-        </a> */}
+        </a>
         <a
           href="https://soundcloud.com/enanimusic"
           target="_blank"
