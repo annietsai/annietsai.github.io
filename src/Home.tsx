@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           <FaSpotify />
         </a>
         <a
-          href="https://music.apple.com/us/artist/enani/1546040901"
+          href="https://music.apple.com/us/artist/enani/1873992381"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:opacity-100 opacity-80 transition-opacity"
